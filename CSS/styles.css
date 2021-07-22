@@ -1,5 +1,71 @@
+html {
+  font-family: 'Lexend Deca', sans-serif;
+}
+
 body {
+  font-family: 'Inter', sans-serif;
+}
+
+header {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+body {
+  padding: 90px 16px 90px 16px;
   background-color: #090B1A;
-  color: white;
+  background-image: url("img/image-header-mobile.jpg");
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    padding: 175px 165px 175px 165px;
+  }
+}
+
+header {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+.heroText {
+  background-color: #1B1938;
+  color: #ffffff;
+  border-radius: 5px 5px 0px 0px;
+  margin-bottom: 3px;
+}
+
+@media screen and (min-width: 1024px) {
+  .heroText {
+    border-radius: 5px 0px 0px 5px;
+    padding: 80px 120px 40px 45px;
+  }
+}
+
+.heroImage img {
+  width: 100%;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.heroImage::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #AA5CDB;
 }
 /*# sourceMappingURL=styles.css.map */
